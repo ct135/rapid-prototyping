@@ -15,8 +15,6 @@
 
 <xmp style="display:none;">
 
-
-
 ### Week 1: Brainstorming 
 
 #### Monday - 9/12: Solar Tracking Subteam
@@ -30,7 +28,43 @@ electrical, and mechnanical components of this system interact.
 
 To wrap our minds around what this part of the project entailed, we drew a block diagram of our 
 subproject and all it's components:
-![image of embroidery](./sew.png)
+![block diagram of solar tracker](./solar_tracking_block_diagram.jpg)
+
+We learned about the two types of control systems: open loop and closed loop sensing as they are 
+used in general to accomplish engineering instructions. For our project, the engineering instruction 
+we seek to accomplish is rotating the position of the solar cooker using motors such that the 
+cooker is angled optimally for maximum sunlight.
+
+Our initial conclusion given that we have no data on the energy cost of operating our motors is to
+go with a balanced approach of using some prexisting data based on time of day, latitutde, and longitude 
+to set an initial position of the solar cooker, and then using sensor data to 
+make micro-adjustments from there. At a certain experimentally determined sampling interval, we make
+a new measurement of using the photoresistor circuit to adjust to a new position. 
+
+#### Wednesday - 9/14: Testing Commercial Solar Cookers
+For this second part of the week, we worked from Building 31 to test commercial solar cookers. we
+had a total of 3 different solar cookers of different scale, technologies, and price points. 
+Initially, Brittany, Xavier, and I worked on assembling the largest solar cooker and we were pretty
+close to fully assembling the solar cooker but it wasn't quite ready for testing on Wednesday. 
+
+![image of heavy-duty cooker reflector](./building-the-cooker.jpg)
+
+![image of us assembling the cooker](./assembling-solar-cooker.jpeg)
+
+At around 4:30 in the afternoon, we headed out and positioned our two other solar cookers outside -- 
+the cyclindrical and the cardboard cooker. As time progressed, we plotted the temperature of roughly
+equal volumes of water heated in each cooker, measured using a thermocouple. The two cookers both
+started with water temperatures at around 23 degrees celsius but at the end, both had heated up the
+water up to above 30 degrees celsius. We also used a Flir camera to take thermal images and measure 
+the surface temperature and the temperature distribution of both cookers.
+
+#### Planned Next Steps:
+1. Design and Run Experimental Set up with all 3 solar cookers.
+Improvements from experiments:
+- Standardize the volume of water in each solar cooker
+- Find a stable setting to ensure equal and consistent sunlight for all cookers
+
+2. Set up Arduino Uno software and understand the current code and circuit design
 </xmp>
 </body>
 
