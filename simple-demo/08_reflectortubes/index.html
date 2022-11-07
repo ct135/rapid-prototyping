@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<title>Week 8</title>
+
+<link href="../style.css" rel="stylesheet">
+<link rel="stylesheet" href="./style.css">
+<body> 
+
+<div class="navbar navbar-fixed-top" style="z-index: -1;"></div>
+
+<div id="header">
+  <iframe src="../header.html"  style="border: none;" width="100%" height="80px;" scrolling="no" ></iframe>
+</div>
+
+<xmp style="display:none;">
+
+### Week 8: Solar Tracker and Conical Focusers
+
+### Monday - 10/31: Completed Solar Tracker Prototype
+At the start of the class, we immiediately began testing the solar tracker. Running the algorithm, we found 
+that the solar tracker worked very well. A few things we noted was that we could adjust the differential threshold threshold
+to change the sensitivity of the tracker. There was also another way in which we could adjust the threshold using physical properties.
+If we were to make the walls of the cruciform taller. A smaller shift would result in a great change in the shadow
+cast on the photoresistors. These two are important considerations for control in the future on determining performance of the tracker.
+
+While testing the solar tracker outside, we found that the solar tracker got readings of about 800 when placed on a partly cloudy
+day outside. This meant that another consideration we discussed was how to ensure that we don't end up having cut-off errors. For example,
+if we ended up having too high readings under direct sunlight, we could adjust the resistances of the resistors in the future circuit
+or we could add "sunglasses" to block a portion of the sunlight. Towards the end of the class, we began setting up simple circuit just to
+measure the amount of light focused through the conical reflector.
+
+### Wednesday - 11/2: Making Conical Reflectors
+We made a conical reflector using carboard shaped into a cone, sprayed with an adhesive, and then covered with aluminum foil. With various
+cone designs, we also ran some tests of the reflectivity of a few new materials including a plastic gold colored film and both sides of the 
+aluminum foil. After the cone was built, we used the small two photoresistor circuit to find the average reading of the light focused
+from the cone vs. without the cone. We found that with the cone, there was a slightly higher so this shows promise for using a cone to catch
+the focused light off the bounce mirror in the future.
+</xmp>
+</body>
+
+<script src="../strapdown.js"></script>
+
+</html>
